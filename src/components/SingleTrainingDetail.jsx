@@ -80,9 +80,7 @@ const PriceBlock = ({ totalPrice, selectedCount }) => (
     <div className="mt-2 flex items-end gap-3">
       <p className="text-4xl font-bold tracking-tight tabular-nums">
         $
-        {totalPrice != null && totalPrice > 0
-          ? totalPrice.toFixed(2)
-          : "00.00"}
+        {totalPrice != null && totalPrice > 0 ? totalPrice.toFixed(2) : "00.00"}
       </p>
       <p className="mb-1.5 text-sm text-orange-200 line-through tabular-nums">
         Was: $
@@ -402,13 +400,7 @@ const SingleTrainingDetail = () => {
               strokeOpacity="0.1"
               fill="none"
             />
-            <circle
-              cx="760"
-              cy="500"
-              r="8"
-              fill="#7eb8d4"
-              fillOpacity="0.25"
-            />
+            <circle cx="760" cy="500" r="8" fill="#7eb8d4" fillOpacity="0.25" />
 
             <defs>
               <linearGradient
@@ -552,12 +544,30 @@ const SingleTrainingDetail = () => {
                 strokeWidth="1.25"
                 strokeDasharray="5 9"
               />
-              <circle cx="980" cy="90" r="70" stroke="white" strokeOpacity="0.1" />
-              <circle cx="980" cy="90" r="42" stroke="white" strokeOpacity="0.08" />
+              <circle
+                cx="980"
+                cy="90"
+                r="70"
+                stroke="white"
+                strokeOpacity="0.1"
+              />
+              <circle
+                cx="980"
+                cy="90"
+                r="42"
+                stroke="white"
+                strokeOpacity="0.08"
+              />
               <circle cx="980" cy="90" r="16" fill="white" fillOpacity="0.08" />
               <circle cx="160" cy="70" r="4" fill="white" fillOpacity="0.25" />
               <circle cx="210" cy="95" r="3" fill="white" fillOpacity="0.18" />
-              <circle cx="1080" cy="200" r="3.5" fill="white" fillOpacity="0.2" />
+              <circle
+                cx="1080"
+                cy="200"
+                r="3.5"
+                fill="white"
+                fillOpacity="0.2"
+              />
               <defs>
                 <linearGradient
                   id="heroWave"
@@ -628,7 +638,7 @@ const SingleTrainingDetail = () => {
                           Date
                         </p>
                         <p className="text-sm font-semibold text-white">
-                          {weekday}, {monthYear} {day}
+                          {weekday}, {day} {monthYear}
                         </p>
                       </div>
                     </div>
